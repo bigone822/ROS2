@@ -20,8 +20,9 @@ ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
 ``` bash
 ros2 run rviz2 rviz2
 ```
-## - Set the Fixed Frame to map
-## - Add a Map display topic (/map) alongside LaserScan (/scan).
+## - 왼쪽 Displays > Global Options > Fixed Frame 을 map으로 설정
+## - Add 클릭 > Map 추가 > topic을 /map으로 설정
+## - Add 클릭 > LaserScan 추가 > topic을 /scan 으로 설정
 
 # 4. Drive the Robot (Teleoperation)
 
