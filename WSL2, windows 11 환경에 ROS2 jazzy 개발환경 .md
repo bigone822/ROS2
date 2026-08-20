@@ -87,11 +87,19 @@ export LDS_MODEL=LDS-01
 source ~/.bashrc
 ```
 
+# 6. 시뮬레이션 및 동작 검증
 
+## 1. Gazebo Harmonic 기반 TurtleBot3 실행:
 
+``` bash
+ros2 launch turtlebot3_gazebo empty_world.launch.py
+```
 
+## 2. 키보드 조종
 
-
+``` bash
+ros2 run turtlebot3_teleop teleop_keyboard
+```
 
 
 
