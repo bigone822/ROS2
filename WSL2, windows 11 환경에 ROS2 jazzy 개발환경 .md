@@ -41,3 +41,28 @@ sudo apt install -y \
   ros-jazzy-cartographer \
   ros-jazzy-cartographer-ros
 ```
+4. 터틀봇3 워크스페이스 빌드 (Jazzy 브랜치)
+
+``` bash
+# 1. 워크스페이스 생성
+mkdir -p ~/turtlebot3_ws/src
+cd ~/turtlebot3_ws/src
+
+# 2. Jazzy/최신 지원 브랜치 클론
+git clone -b jazzy https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+
+# 3. 의존성 설치 및 빌드
+cd ~/turtlebot3_ws
+rosdep install -i --from-path src --rosdistro jazzy -y
+colcon build --symlink-install
+```
+
+
+
+
+
+
+
