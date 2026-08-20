@@ -41,6 +41,11 @@ sudo apt install -y \
   ros-jazzy-cartographer \
   ros-jazzy-cartographer-ros
 ```
+- 환경 변수 등록
+``` bash
+source /opt/ros/jazzy/setup.bash
+```
+
 # 4. 터틀봇3 워크스페이스 빌드 (Jazzy 브랜치)
 
 ``` bash
