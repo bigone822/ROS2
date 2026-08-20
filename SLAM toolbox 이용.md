@@ -38,3 +38,9 @@ ros2 run nav2_map_server map_saver_cli -f ~/map
 ```
 
 
+# 6 Nav2
+
+``` bash
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true map:=./map.yaml
+```
+
