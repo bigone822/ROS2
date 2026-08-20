@@ -65,9 +65,11 @@ colcon build --symlink-install
 ``` bash
 source /opt/ros/jazzy/setup.bash
 ```
+
 ``` bash
 nano ~/.bashrc
 ```
+
 - 맨 아래 다음 내용을 확인
 ``` bash
 # ROS2 Jazzy Setup
@@ -80,7 +82,10 @@ export ROS_DOMAIN_ID=30
 export LDS_MODEL=LDS-01
 ```
 
-
+- 확인 차 다시 한번 더 적용
+``` bash
+source ~/.bashrc
+```
 
 
 
