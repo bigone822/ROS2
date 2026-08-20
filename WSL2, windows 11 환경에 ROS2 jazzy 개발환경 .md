@@ -41,7 +41,7 @@ sudo apt install -y \
   ros-jazzy-cartographer \
   ros-jazzy-cartographer-ros
 ```
-4. 터틀봇3 워크스페이스 빌드 (Jazzy 브랜치)
+# 4. 터틀봇3 워크스페이스 빌드 (Jazzy 브랜치)
 
 ``` bash
 # 1. 워크스페이스 생성
@@ -59,6 +59,42 @@ cd ~/turtlebot3_ws
 rosdep install -i --from-path src --rosdistro jazzy -y
 colcon build --symlink-install
 ```
+
+# 5. 환경 변수 등록 (~/.bashrc)
+
+``` bash
+source /opt/ros/jazzy/setup.bash
+```
+``` bash
+nano ~/.bashrc
+```
+- 맨 아래 다음 내용을 확인
+``` bash
+# ROS2 Jazzy Setup
+source /opt/ros/jazzy/setup.bash
+source ~/turtlebot3_ws/install/setup.bash
+
+# TurtleBot3 Parameters
+export TURTLEBOT3_MODEL=burger
+export ROS_DOMAIN_ID=30
+export LDS_MODEL=LDS-01
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
