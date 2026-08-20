@@ -7,7 +7,7 @@ export TURTLEBOT3_MODEL=waffle
 ros2 launch turtlebot3_gazebo turtlebot3_world.py
 ```
 
-## 2. Start SLAM Toolbox
+# 2. Start SLAM Toolbox
 
 - In a second terminal, start the SLAM mapping node and ensure you pass the simulation time argument:
 
@@ -15,7 +15,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.py
 ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
 ```
 
-## 3. Open RViz2 for Visualization
+# 3. Open RViz2 for Visualization
 
 ``` bash
 ros2 run rviz2 rviz2
