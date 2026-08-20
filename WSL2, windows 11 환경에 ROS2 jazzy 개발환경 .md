@@ -7,7 +7,7 @@ wsl --install -d Ubuntu-24.04
 # 버전 확인
 wsl -l -v
 ```
-2. ROS 2 Jazzy 코어 설치 (docs.ros.org 기준)
+# 2. ROS 2 Jazzy 코어 설치 (docs.ros.org 기준)
 
 ``` bash
 # 1. 로케일 설정
@@ -29,4 +29,15 @@ sudo apt install ros-jazzy-desktop ros-dev-tools python3-colcon-common-extension
 # 4. rosdep 초기화
 sudo rosdep init
 rosdep update
+```
+# 3. Gazebo Harmonic 및 SLAM/Nav2 패키지 설치
+- Jazzy에서는 기존 Gazebo 대신 ros-gz(Gazebo Harmonic 브리지) 패키지를 설치합니다.
+
+``` bash
+sudo apt install -y \
+  ros-jazzy-ros-gz \
+  ros-jazzy-navigation2 \
+  ros-jazzy-nav2-bringup \
+  ros-jazzy-cartographer \
+  ros-jazzy-cartographer-ros
 ```
