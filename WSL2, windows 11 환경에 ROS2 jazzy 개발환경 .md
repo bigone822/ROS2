@@ -1,6 +1,5 @@
-# Windows 11 & WSL2 Ubuntu 24.04 설치
 
-
+## 1. Windows 11 & WSL2 Ubuntu 24.04 설치
 ``` PowerShell
 # Ubuntu 24.04 설치
 wsl --install -d Ubuntu-24.04
